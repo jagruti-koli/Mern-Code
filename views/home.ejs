@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: #fff;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .hero-section {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #d1d5db;
+        }
+
+        .btn-custom {
+            margin-top: 20px;
+            padding: 10px 30px;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <%- include('navbar.ejs') %>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div>
+                <h1>Hi, I'm <span class="text-warning">Jagruti Koli</span> 👋</h1>
+                <p>MERN Stack Developer | React | Node.js | MongoDB</p>
+
+                <div>
+                    <a href="/about" class="btn btn-warning btn-custom">About Me</a>
+                    <a href="/contact" class="btn btn-outline-light btn-custom ms-2">Contact</a>
+                </div>
+            </div>
+        </section>
+</body>
+
+</html>

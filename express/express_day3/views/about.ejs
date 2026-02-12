@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#f4f6f9;
+  color:#333;
+}
+
+/* Navbar */
+.navbar{
+  background:#111;
+  padding:15px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.navbar a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  font-size:16px;
+}
+
+.navbar a:hover{
+  color:#ff4d6d;
+}
+
+/* About Section */
+.container{
+  max-width:1000px;
+  margin:60px auto;
+  padding:20px;
+}
+
+.about-box{
+  background:white;
+  padding:40px;
+  border-radius:10px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.about-box h1{
+  margin-bottom:20px;
+  font-size:32px;
+  color:#ff4d6d;
+}
+
+.about-box p{
+  line-height:1.8;
+  margin-bottom:15px;
+}
+
+.team{
+  margin-top:40px;
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.card{
+  flex:1;
+  min-width:250px;
+  background:#fafafa;
+  padding:20px;
+  border-radius:8px;
+  text-align:center;
+  box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+
+.card img{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  margin-bottom:15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <div style="color:white;font-weight:bold;">My Website</div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="about-box">
+    <h1>About Us</h1>
+    <p>
+      Welcome to our website! We are passionate about building modern,
+      responsive, and user-friendly web applications.
+    </p>
+    <p>
+      Our goal is to deliver high-quality digital solutions that help
+      businesses grow and succeed in the online world.
+    </p>
+
+    <div class="team">
+      <div class="card">
+        <img src="https://picsum.photos/100?1">
+        <h3>Jagruti</h3>
+        <p>Frontend Developer</p>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/100?2">
+        <h3>Rahul</h3>
+        <p>Backend Developer</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
+
+
+<% for(let i=2 ; i<= 100; i+=2){%>
+<%= i }%>
+<

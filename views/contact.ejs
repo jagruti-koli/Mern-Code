@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+
+  <style>
+    body {
+      background-color: #f4f6f9;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    .contact-container {
+      max-width: 700px;
+      margin: 60px auto;
+    }
+
+    .contact-card {
+      border-radius: 20px;
+      padding: 30px;
+      background: #fff;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .social-icons a {
+      font-size: 24px;
+      margin: 0 10px;
+      color: lightcoral;
+      transition: transform 0.3s;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+
+    .btn{
+        background-color: lightcoral !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <%- include('navbar.ejs') %>
+
+  <div class="container contact-container">
+    <div class="contact-card">
+
+      <h2 class="text-center mb-4">Get in Touch</h2>
+
+      <!-- Contact Form -->
+      <form>
+        <div class="mb-3">
+          <label class="form-label">Name</label>
+          <input type="text" class="form-control" placeholder="Enter your name">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-control" placeholder="Enter your email">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Message</label>
+          <textarea class="form-control" rows="4" placeholder="Write your message"></textarea>
+        </div>
+
+        <div class="d-grid">
+          <button type="submit" class="btn btn-lg">
+            Send Message
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+</body>
+</html>

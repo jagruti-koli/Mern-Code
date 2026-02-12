@@ -1,0 +1,16 @@
+{
+  "name": "express_day1",
+  "version": "1.0.0",
+  "description": "our first express server",
+  "license": "ISC",
+  "author": "jagruti koli",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

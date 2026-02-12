@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram Profile</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background:#fafafa;
+}
+
+/* Navbar */
+.navbar{
+  width:100%;
+  height:60px;
+  background:#fff;
+  border-bottom:1px solid #dbdbdb;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 40px;
+  position:fixed;
+  top:0;
+  z-index:100;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:700;
+}
+
+.nav-icons span{
+  margin-left:20px;
+  cursor:pointer;
+  font-size:20px;
+}
+
+/* Profile Section */
+.container{
+  max-width:900px;
+  margin:100px auto 0;
+  padding:20px;
+}
+
+.profile{
+  display:flex;
+  gap:50px;
+  align-items:center;
+}
+
+.profile img{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.profile-info h2{
+  font-weight:400;
+}
+
+.profile-stats{
+  display:flex;
+  gap:30px;
+  margin:15px 0;
+}
+
+.profile-stats span{
+  font-weight:500;
+}
+
+.bio{
+  font-size:14px;
+  line-height:1.5;
+}
+
+/* Posts Grid */
+.posts{
+  margin-top:40px;
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:10px;
+}
+
+.posts img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.posts img:hover{
+  opacity:0.8;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .profile{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .posts{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:480px){
+  .posts{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <div class="logo">Instagram</div>
+  <div class="nav-icons">
+    <span>🏠</span>
+    <span>💬</span>
+    <span>❤️</span>
+    <span>👤</span>
+  </div>
+</div>
+
+<!-- Profile Section -->
+<div class="container">
+  <div class="profile">
+    <img src="https://picsum.photos/200" alt="profile">
+
+    <div class="profile-info">
+      <h2>jagruti_koli</h2>
+
+      <div class="profile-stats">
+        <div><span>12</span> posts</div>
+        <div><span>1.2k</span> followers</div>
+        <div><span>350</span> following</div>
+      </div>
+
+      <div class="bio">
+        <strong>Jagruti Koli</strong><br>
+        MCA Graduate 💻<br>
+        Web Developer | React | Node<br>
+        📍 India
+      </div>
+    </div>
+  </div>
+
+  <!-- Posts Grid -->
+  <div class="posts">
+    <img src="https://picsum.photos/400?1">
+    <img src="https://picsum.photos/400?2">
+    <img src="https://picsum.photos/400?3">
+    <img src="https://picsum.photos/400?4">
+    <img src="https://picsum.photos/400?5">
+    <img src="https://picsum.photos/400?6">
+  </div>
+</div>
+
+</body>
+</html>
